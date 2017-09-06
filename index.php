@@ -329,9 +329,9 @@ class fb_chatbot_api {
     public function order( $actions, $params = array() )
     {
         // Database
-        $servername = "127.0.0.1:55752";
-        $username = "azure";
-        $password = "6#vWHD_$";
+        $servername = "<ip_address>";
+        $username = "<username>";
+        $password = "<password>";
 
         $conn = new PDO("mysql:host=$servername;dbname=fb_chatbot", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
